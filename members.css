@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./images/anh11.jpg);
+}
+
+nav {
+  top: 2%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(253, 144, 77, 0);
+  font-weight: bold;
+  height: 50px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow:
+    0 0 15px rgba(20, 13, 5, 0.203),
+    inset 0 0 15px rgba(248, 248, 248, 0.17);
+  animation: fadein 1s ease-in forwards;
+}
+
+nav a {
+  color: rgb(255, 243, 17);
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  padding: 10px 20px;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+  color: rgb(242, 251, 62);
+  transform: scale(1.4);
+}
+
+h1 {
+  margin: 70px 0 0;
+  text-align: center;
+  color: rgb(255, 235, 14);
+  font-family: sans-serif;
+  text-shadow: 0 0 12px rgb(0, 0, 0);
+  animation: fadein 1s ease-in forwards;
+  opacity: 0;
+}
+
+.members {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  transform: scale(0.9);
+  animation: fadein 1s ease-in forwards;
+  font-family: sans-serif;
+}
+
+.card {
+  background: rgba(192, 149, 248, 0.127);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow:
+    0 0 20px rgba(0, 0, 0, 0.604),
+    inset 0 0 10px rgba(255, 255, 255, 0.336);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.733),
+    inset 0 0 10px rgba(255, 255, 255, 0.566);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card:hover {
+  transform: scale(1.13);
+}
+
+.nickname {
+  color: rgb(220, 198, 0);
+  font-size: 2rem;
+  text-shadow: 0 0 5px black;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 5px 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.61);
+}
+
+.bio {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px black;
+}
+
+.end {
+  background: black;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  text-align: center;
+  height: 20px;
+  color: aliceblue;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .members {
+    grid-template-columns: 1fr;
+  }
+}
