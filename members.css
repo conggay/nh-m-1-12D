@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url("../images/anh11.jpg");
+  background: url("./images/anh11.jpg");
 }
 
 nav {
@@ -144,5 +144,6 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
 
 
