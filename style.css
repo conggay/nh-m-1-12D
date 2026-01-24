@@ -17,7 +17,7 @@ h2 {
 }
 
 body {
-  background: url("images/anh11.jpg");
+  background: url("../images/anh11.jpg");
 }
 
 nav {
@@ -133,7 +133,7 @@ p {
   animation-delay: 1.3s;
 }
 
-div:nth-child(14) {
+.cong div:nth-child(14) {
   animation-delay: 1.4s;
 }
 
@@ -221,4 +221,5 @@ div:nth-child(14) {
     opacity: 0.5;
   }
 }
+
 
