@@ -6,7 +6,7 @@
 
 body {
   opacity: 0;
-  background-image: url("../images/anh11.jpg");
+  background-image: url("./images/anh11.jpg");
   animation: hien 1.5s ease forwards;
 }
 
@@ -57,6 +57,7 @@ section {
     opacity: 1;
   }
 }
+
 
 
 
